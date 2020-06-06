@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sky Sports</title>
+    <link rel="stylesheet" href="bootstrap-3.3.6/dist/css/bootstrap.min.css">
+    <script src="jquery/jquery-1.11.3.js"></script>
+</head>
+<style>
+     /* header*/
+
+     #header {
+        background-color: green;
+        height: 150px;
+        width: 50%;
+        background-size: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    #header1 {
+        width: 50%;
+        float: right;
+        margin-top: -150px;
+        height: 150px;
+        background-color: seagreen;
+
+    }
+    
+
+button {
+    margin-left: 20px;
+    text-decoration: none;
+    background-color: white;
+    width: 85px;
+    height: 55px;
+    border-style: none;
+    transition: all 0.8s;
+}
+
+button:hover {
+    background-color: green ;
+    color: white;
+    transform: rotate(360deg);
+}
+/*video*/
+#h1{
+    transition: all 0.8s;
+}
+#h1:hover{
+    transform: rotate(360deg);
+}
+
+#h2{
+    transition: all 0.8s;
+}
+#h2:hover{
+    transform: rotate(360deg);
+}
+#h3{
+    transition: all 0.8s;
+}
+#h3:hover{
+    transform: rotate(360deg);
+}
+#h4{
+    transition: all 0.8s;
+}
+#h4:hover{
+    transform: rotate(360deg);
+}
+.v1{
+    display: none;
+}
+.v2{
+    display: none;
+}
+.v3{
+    display: none;
+}
+.videoo:hover{
+color: green;
+}
+.v4{
+    display: none;
+}
+.v1:hover{
+    color: green;
+}
+.v8{
+    display: none;
+}
+.v2:hover{
+    color: green;
+}
+.v12{
+    display: none;
+}
+.v3:hover{
+    color: green;
+}
+
+
+
+</style>
+<script>
+$(document).ready(function(){
+    $(".videoo").mouseenter(function(){
+    $(".v1").animate({display:"show"
+    },8000);
+    $(".v2").animate({display:"show"
+    },8000);
+    $(".v3").animate({display:"show"
+    },8000);
+    });
+    $(".v1").hover(function(){
+    $(".v4").animate({display:"show"
+    },8000);
+    });
+    $(".v2").hover(function(){
+    $(".v8").animate({display:"show"
+    },8000);
+    });
+    $(".v3").hover(function(){
+    $(".v12").animate({display:"show"
+    },8000);
+    });
+
+});
+</script>
+<body>
+        <div id="header">
+                <img src="New LOGO.png" alt="logo" style="height: 190px;padding-left: 3%;">
+            </div>
+            <div id="header1">
+            </div>
+            <br>
+        <div class="container">
+                <div id="hh" style="margin-left:115px;">
+                        <h1>Rugby</h1>
+                    </div><hr>
+                    <div class="container">
+                        <nav class="nav-wrapper">
+                            <button>News</button>
+                            <button>Teams</button>
+                            <button>Blog</button>
+                            <button>Comptetions</button>
+                            <button>Results</button>
+                            <button>Tables</button>
+                            <button>Video</button>
+                            <button>On Sky</button>
+                            <button>Scores</button>
+                            <button>Sky Bet</button>
+                        </nav>
+                    </div>
+                    <br>
+            <script>
+                //For Animeation
+                 var i =0;
+                 var images = [];
+                 var time = 3000;
+                 images[0] = 'rucby1.jpg';
+                 images[1] = 'rucby2.jpg';
+                 images[2] = 'rucby3.jpg';
+                 images[3] = 'rucby4.jpg';
+                 images[4] = 'rucby5.jpg';
+                 images[5] = 'rucby6.jpg';
+                 images[6] = 'rucby7.jpg';
+                 images[7] = 'rucby8.jpg';
+                 images[8] = 'rucby9.jpg';
+                 images[9] = 'rucby10.jpg';
+                 images[10] = 'rucby11.jpg';
+                 images[11] = 'rucby12.jpg';
+                 images[12] = 'rucby13.jpg';
+         
+                 function changeimg(){
+                     document.slide.src=images[i];
+                     if(i < images.length - 1){
+                         i++;
+                     }
+                     else{
+                         i = 0;
+                     }
+                     setTimeout("changeimg()",time);
+                 }
+                 window.onload = changeimg;
+                 </script>
+                <div class="slide-container">
+                     <img name="slide" style="width: 100%; height: 50%;">
+                    <div>
+                <h2>Latest</h2>
+                <hr>
+            <div class="row">
+            <div class="col-lg-12" style="background-color:lavenderblush; box-sizing: border-box; box-shadow: 3px 3px 7px green">
+                <img src="rucby10.jpg" width="200px"; height="110px"; id="h1"><p style="float: right; margin-left: 10px;"><a href="#"><b>Worldcup 2015</b></a><br>Abd is gone to quit international career.<br>The bigest player of cricket is going of abd gives his The bigest player of cricket is going of abd gives his
+                <br> Writirement Comes on to the bigest players of cricket The bigest player of cricket is going of abd gives his
+                Writirement Comes on to the bigest players<br> of cricket Writirement Comes on to the bigest players of cricket.</p></div></div><br>
+                
+                <div class="row">
+                        <div class="col-lg-12" style="background-color:lavenderblush; box-sizing: border-box; box-shadow: 3px 3px 7px green;">
+                <img src="rucby12.jpg" width="200px"; height="110px" id="h2";><p style="float: right;"><a href="#"><b>World Best</b></a><br>RBB cricket WorldCup is comming in 2019.<br>The bigest player of cricket is going of abd gives his The bigest player of cricket is going of abd gives his
+                    <br> Writirement Comes on to the bigest players of cricket The bigest player of cricket is going of abd gives his
+                    Writirement Comes on to the bigest players<br> of cricket Writirement Comes on to the bigest players of cricket.</p></div></div><br>
+                <div class="row">
+                            <div class="col-lg-12" style="background-color:lavenderblush; box-sizing: border-box; box-shadow: 3px 3px 7px green;">
+                    <img src="rucby7.jpg" width="200px"; height="110px" id="h3";><p style="float: right;"><a href="#"><b>Best body</b></a><br>Andree russle form is back.<br>The bigest player of cricket is going of abd gives his The bigest player of cricket is going of abd gives his
+                    <br> Writirement Comes on to the bigest players of cricket The bigest player of cricket is going of abd gives his
+                    Writirement Comes on to the bigest players<br> of cricket Writirement Comes on to the bigest players of cricket.</p></div></div><br>
+                <div class="row">
+                            <div class="col-lg-12" style="background-color:lavenderblush; box-sizing: border-box; box-shadow: 3px 3px 7px green;">
+                <img src="rucby12.jpg" width="200px"; height="110px"; id="h4"><p style="float: right;"><a href="#"><b>RBB</b></a><br>Ashwin did very bad with Buttler.<br>The bigest player of cricket is going of abd gives his The bigest player of cricket is going of abd gives his
+                    <br> Writirement Comes on to the bigest players of cricket The bigest player of cricket is going of abd gives his
+                    Writirement Comes on to the bigest players<br> of cricket Writirement Comes on to the bigest players of cricket.</p><br> 
+            </div>
+            </div>
+        <hr>      
+                <h2 class="videoo">Video</h2>
+                <hr>
+            <div class="row">
+            <div class="col-md-12">
+                <h3 class="v1"><b>WORLD CUP</b></h3>
+                <p class="v4">
+                <video src="IPLvideo1.mp4" poster="rucby1.jpg" controls="control" width="280px;" height="200;"></video>
+                <video src="IPLvideo2.mp4" poster="rucby2.jpg" controls="control" width="280px;" height="200;"></video>
+                <video src="IPLvideo3.mp4" poster="rucby3.jpg" controls="control" width="280px;" height="200;"></video>
+                <video src="KKR vs RCB- Virat, AB guide RCB to easy win.mp4" poster="rucby4.jpg" controls="control" width="280px;" height="200;"></video></p>
+                <h3 class="v2"><b>WORLD CUP 2015</b></h3>
+                <p class="v8">
+                <video src="PSLvideo1.mp4" poster="rucby5.jpg" controls="control" width="280px;" height="200;"></video>
+                <video src="PSLvideo2.mp4" poster="rucby6.jpg" controls="control" width="280px;" height="200;"></video>
+                <video src="PSLvideo3.mp4" poster="rucby7.jpg" controls="control" width="280px;" height="200;"></video>
+                <video src="PSLvideo4.mp4" poster="rucby8.jpg" controls="control" width="280px;" height="200;"></video></p>
+                <h3 class="v3"><b>WORLD CUP 2019</b></h3>
+                <p class="v12">
+                <video src="PSLvideo1.mp4" poster="rucby9.jpg" controls="control" width="280px;" height="200;"></video>
+                <video src="PSLvideo2.mp4" poster="rucby10.jpg" controls="control" width="280px;" height="200;"></video>
+                <video src="PSLvideo3.mp4" poster="rucby11.jpg" controls="control" width="280px;" height="200;"></video>
+                <video src="PSLvideo4.mp4" poster="rucby12.jpg" controls="control" width="280px;" height="200;"></video></p>
+                <hr>
+            </div>
+        </div>
+    </div>
+    
+         
+</body>
+</html>

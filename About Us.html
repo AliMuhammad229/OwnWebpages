@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-3.3.6/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sky Sports</title>
+</head>
+<style>
+    /* header*/
+    
+    #header {
+        background-color: green;
+        height: 150px;
+        width: 50%;
+        background-size: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+    #header1 {
+        width: 50%;
+        float: right;
+        margin-top: -158px;
+        height: 150px;
+        background-color: seagreen;
+    }
+    
+    .well-sm {
+        margin-top: -8px;
+        background-color: aliceblue;
+    }
+    
+    #ul1 {
+        list-style: none;
+        /* margin-top: 20px; */
+        font-size: 20px;
+        /* padding-left: -10px; */
+        background-color: aliceblue;
+        padding-block-end: 2%;
+    }
+    
+    ul li a {
+        color: black;
+        float: left;
+        margin-top: 20px;
+        width: 150px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        padding: 20px;
+        transition: all 0.8s;
+    }
+    
+    ul li a:hover {
+        display: block;
+        color: darkgray;
+        transform: rotate(360deg);
+    }
+    
+    .fa-user {
+        transition: all 0.8s;
+    }
+    
+    .fa-user:hover {
+        color: darkgray;
+        transform: rotate(360deg);
+    }
+    /*About Us*/
+    
+    #h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: relative;
+        letter-spacing: 2px;
+        animation: text 2s linear;
+        padding-bottom: 8px;
+        text-align: center;
+    }
+    
+    @keyframes text {
+        0% {
+            color: black;
+            margin-bottom: -6px;
+        }
+        30% {
+            color: lightgreen;
+            margin-bottom: -6px;
+            letter-spacing: 20px;
+        }
+        70% {
+            color: black;
+            margin-bottom: -6px;
+            letter-spacing: 2px;
+        }
+    }
+    
+    #h1:hover {
+        color: darkgreen;
+    }
+    
+    #h2 {
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: relative;
+        letter-spacing: 2px;
+        animation: txt 2s linear;
+        padding-bottom: 8px;
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    @keyframes txt {
+        0% {
+            color: black;
+            margin-bottom: -6px;
+        }
+        30% {
+            color: lightgreen;
+            margin-bottom: -6px;
+            letter-spacing: 20px;
+        }
+        70% {
+            color: black;
+            margin-bottom: -6px;
+            letter-spacing: 2px;
+        }
+    }
+    
+    #h2:hover {
+        color: darkgreen;
+    }
+    
+    #para {
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        word-spacing: 2px;
+        text-align: center;
+    }
+    
+    #para:hover {
+        color: darkgreen;
+        font-size: 20px;
+    }
+    /*rounded images*/
+    
+    .border {
+        margin: auto;
+        display: block;
+        width: 160px;
+        height: 3px;
+        background-color: darkgreen;
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+    
+    .ps {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    #a1 {
+        display: inline-block;
+        margin: 0 30px;
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    
+    #a2 {
+        display: inline-block;
+        margin: 0 30px;
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    
+    #a3 {
+        display: inline-block;
+        margin: 0 30px;
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    
+    #a1 img {
+        width: 100%;
+        filter: grayscale(100%);
+    }
+    
+    #a2 img {
+        width: 100%;
+        filter: grayscale(100%);
+    }
+    
+    #a3 img {
+        width: 100%;
+        filter: grayscale(100%);
+    }
+    
+    #a1 img:hover {
+        filter: none;
+    }
+    
+    #a2 img:hover {
+        filter: none;
+    }
+    
+    #a3 img:hover {
+        filter: none;
+    }
+    
+    .section {
+        width: 600px;
+        margin: auto;
+        font-size: 20px;
+        text-align: justify;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .section:target {
+        height: auto;
+    }
+    
+    .name {
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+    /*footer*/
+    /*footer*/
+    
+    .footer {
+        background-color: gainsboro;
+        padding-top: 0px;
+        padding: 5px;
+        margin-top: 50px;
+    }
+    
+    .links {
+        margin-top: 6%;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .fa-facebook:hover {
+        color: blue;
+        font-size: 25px;
+    }
+    
+    .fa-twitter:hover {
+        color: skyblue;
+        font-size: 25px;
+    }
+    
+    .fa-google:hover {
+        color: orangered;
+        font-size: 25px;
+    }
+    
+    #twt:hover {
+        display: inline;
+        color: white;
+        font-size: 18px;
+    }
+    
+    #fb:hover {
+        display: inline;
+        color: white;
+        font-size: 18px;
+    }
+    
+    #google:hover {
+        display: inline;
+        color: white;
+        font-size: 18px;
+    }
+    
+    .personalinks {
+        margin-left: 5%;
+        padding: 2%;
+        margin-right: 5%;
+        margin-bottom: 25px;
+    }
+    
+    .info1 {
+        margin-left: 5%;
+    }
+    
+    .info2 {
+        margin-left: 30%;
+        margin-top: -140px;
+    }
+    
+    .info3 {
+        margin-left: 55%;
+        margin-top: -133px;
+    }
+    /* #p1:hover {
+        display: inline-block;
+        color: lightgreen;
+    } */
+    
+    #p2:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+    /* #p3:hover {
+        display: inline-block;
+        color: lightgreen;
+    } */
+    
+    #p4:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+    
+    #p5:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+    
+    #p6:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+    
+    #p7:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+    
+    #p8:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+    
+    #p9:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+    
+    .implinks {
+        margin-left: 5%;
+        padding: 2%;
+        margin-right: 5%;
+    }
+    
+    #lastbtn1:hover {
+        color: red;
+        display: inline-block;
+    }
+    
+    #lastbtn2:hover {
+        color: red;
+        display: inline-block;
+    }
+    
+    #lastbtn3:hover {
+        color: red;
+        display: inline-block;
+    }
+    
+    #lastbtn3 {
+        padding-bottom: 20px;
+    }
+</style>
+
+<body>
+    <div>
+        <div id="header">
+            <img src="New LOGO.png" alt="logo" style="height: 190px;padding-left: 3%;">
+        </div>
+        <div id="header1">
+        </div>
+
+        <div class="well-sm">
+            <div class="container">
+
+                <ul id="ul1">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Sports</a>
+                    </li>
+                    <li>
+                        <a href="">Video</a>
+                    </li>
+                    <li>
+                        <a href="">Tv</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+                    <li>
+                        <span class="fa fa-user" style="margin-top: 42px; margin-left: 50px;"> Log In</span>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="contact">
+                <h1 id="h1">About Us</h1>
+                <hr>
+                <br>
+                <h2 id="h2">Our Mission</h2>
+            </div>
+        </div>
+        <div class="container">
+            <p id="para">We built a sports website to acknowledge people about current new and reports
+                <br> related to sports We make tweleve pages of sports including Cricket, Footbal,
+                <br> Rugby, Basketball, WWE, Golf, Boxing, Car Racing, Cycling.
+                <br> We write detailed description about each pages, add some videos, text and animation.
+            </p>
+        </div>
+        <div class="container">
+            <span class="border"></span>
+            <div class="ps">
+                <!-- <a href="#para1" id="a1"><img src="Ali.jpg" alt=""></a> -->
+                <a href="#para2" id="a2"><img src="Ali.jpg" alt=""></a>
+                <!-- <a href="#para3" id="a3"><img src="Talha.JPG" alt=""></a> -->
+            </div>
+        </div>
+        <div class="container">
+            <div class="section" id="para1">
+                <span class="name">Ali Muhammad</span>
+                <span class="border"></span>
+                <p style="text-align: center;">
+                    I am a Front-End-developer and a Content Writer<br> Email: aliqasim.am7@gmail.com
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="footer">
+                <div class="container">
+                    <div class="links">
+                        <ul>
+                            <span class="fa fa-twitter">
+                                <a href="https://twitter.com/SkySports" target="_blank" style="color: black;">
+                                    <button style="border: 0px; background-color: gainsboro;" id="twt">Twitter</button>
+                                </a>
+                            </span>
+                            <span class="fa fa-facebook">
+                                <a href="https://www.facebook.com/SkySports" target="_blank" style="color: black;">
+                                    <button style="border: 0px; background-color: gainsboro;" id="fb">Facebook</button>
+                                </a>
+                            </span>
+                            <span class="fa fa-google">
+                                <a href="https://plus.google.com/107763292354713948501" target="_blank" style="color: black;">
+                                    <button style="border: 0px; background-color: gainsboro;" id="google">Google</button>
+                                </a>
+                            </span>
+                        </ul>
+                        <hr>
+                    </div>
+                    <br>
+                    <div class="personalinks">
+                        <div class="container">
+                            <div class="info1">
+                                <ul>
+                                    <h3>Sky Sports</h3>
+                                    <a href="#" style="color: black;">
+                                        <button id="p1" style="border: 0px;background-color: gainsboro; padding-bottom: 1%; font-size: 15px;">Get Sky Sports</button></a>
+                                    <br>
+                                    <a href="#" style="color: black;">
+                                        <button id="p2" style="border: 0px;background-color: gainsboro; padding-bottom: 1%; font-size: 15px;">Sky Sports Apps</button></a>
+                                    <br>
+                                    <a href="#" style="color: black;">
+                                        <button id="p3" style="border: 0px;background-color: gainsboro; font-size: 15px;">Team Sky</button></a>
+                                    <br>
+                                </ul>
+                            </div>
+                            <div class="info2">
+                                <ul>
+                                    <h3>Partners</h3>
+                                    <a href="#" style="color: black;">
+                                        <button id="p4" style="border: 0px;background-color: gainsboro; padding-bottom: 1%; font-size: 15px;">Sky Bet</button></a>
+                                    <br>
+                                    <a href="#" style="color: black;">
+                                        <button id="p5" style="border: 0px;background-color: gainsboro; padding-bottom: 1%; font-size: 15px;">Super 6</button></a>
+                                    <br>
+                                    <a href="#" style="color: black;">
+                                        <button id="p6" style="border: 0px;background-color: gainsboro; font-size: 15px;">Cricket 365</button></a>
+                                    <br>
+                                </ul>
+                            </div>
+                            <div class="info3">
+                                <ul>
+                                    <h3>Sky Sports Channels</h3>
+                                    <a href="#" style="color: black;">
+                                        <button id="p7" style="border: 0px;background-color: gainsboro; padding-bottom: 2%; font-size: 15px;">Get Sky Sports</button></a>
+                                    <br>
+                                    <a href="#" style="color: black;">
+                                        <button id="p8" style="border: 0px;background-color: gainsboro; padding-bottom: 2%; font-size: 15px;">Sky Sports F1</button></a>
+                                    <br>
+                                    <a href="#" style="color: black;">
+                                        <button id="p9" style="border: 0px;background-color: gainsboro; font-size: 15px;">Word for Sky</button></a>
+                                    <br>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="implinks">
+
+                        <a href="#" style="color: black;">
+                            <button id="lastbtn1" style="border: 0px; background-color: gainsboro; font-size: 16px;">Terms & Conditions</button></a>
+                        <a href="#" style="color: black;">
+                            <button id="lastbtn2" style="border: 0px; background-color: gainsboro; font-size: 16px; padding-left: 2%;">Privacy & Cookies</button></a>
+                        <a href="#" style="color: black;">
+                            <button id="lastbtn3" style="border: 0px; background-color: gainsboro; font-size: 16px; padding-left: 2%;">Contact Us</button></a>
+                        <br>
+                        <p style="font-size: 16px; color: firebrick;">@ 2019 Sky Us</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

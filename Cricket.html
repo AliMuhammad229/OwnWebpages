@@ -1,0 +1,415 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="bootstrap-3.3.6/dist/css/bootstrap.min.css" />
+</head>
+<style>
+    ul {
+        padding: 0;
+        margin: 0%;
+        list-style: none;
+    }
+
+    ul li {
+        float: left;
+        width: 100px;
+        height: 40;
+        background-color: white;
+        color: white;
+        text-align: center;
+
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+    }
+
+    ul li a:hover {
+
+        background-color: thistle;
+    }
+
+    ul li ul li {
+        display: none;
+    }
+
+    ul li:hover ul li {
+
+        display: block;
+    }
+</style>
+
+<body>
+    <h1>Cricket</h1>
+    <ul>
+        <hr>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Teams</a>
+            <ul>
+                <li><a href="#">Paksitan</a></li>
+                <li><a href="#">Australia</a></li>
+                <li><a href="#">india</a></li>
+                <li><a href="#">bangladesh</a></li>
+
+
+            </ul>
+        </li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Score</a></li>
+        <li><a href="#">On Lat</a></li>
+    </ul>
+
+
+
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-3.3.6/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery/jquery-1.11.3.js"></script>
+    <title>Cricket</title>
+</head>
+<style>
+    /* header*/
+
+    #header {
+        background-color: green;
+        height: 150px;
+        width: 50%;
+        background-size: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    #header1 {
+        width: 50%;
+        float: right;
+        margin-top: -150px;
+        height: 150px;
+        background-color: seagreen;
+
+    }
+
+    button {
+        margin-left: 20px;
+        text-decoration: none;
+        background-color: white;
+        width: 85px;
+        height: 55px;
+        border-style: none;
+        transition: all 0.8s;
+    }
+
+    button:hover {
+        background-color: forestgreen;
+        color: white;
+        animation: 20ms;
+        transform: rotate(360deg);
+    }
+    #h1{
+    transition: all 0.8s;
+}
+#h1:hover{
+    transform: rotate(360deg);
+}
+
+#h2{
+    transition: all 0.8s;
+}
+#h2:hover{
+    transform: rotate(360deg);
+}
+#h3{
+    transition: all 0.8s;
+}
+#h3:hover{
+    transform: rotate(360deg);
+}
+#h4{
+    transition: all 0.8s;
+}
+#h4:hover{
+    transform: rotate(360deg);
+}
+
+#worldcup:hover{
+    color: darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#latest:hover{
+    color: darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.v1{
+    display: none;
+}
+.v2{
+    display: none;
+}
+.v3{
+    display: none;
+}
+.videoo:hover{
+color: green;
+}
+.v4{
+    display: none;
+}
+.v1:hover{
+    color: green;
+}
+.v8{
+    display: none;
+}
+.v2:hover{
+    color: green;
+}
+.v12{
+    display: none;
+}
+.v3:hover{
+    color: green;
+}
+#e1:hover{
+
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#e2:hover{
+
+color: green;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#e3:hover{
+
+color: green;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#e4:hover{
+
+color: green;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+  
+</style>
+<script>
+$(document).ready(function(){
+    $(".videoo").mouseenter(function(){
+    $(".v1").animate({display:"show"
+    },3000);
+    $(".v2").animate({display:"show"
+    },3000);
+    $(".v3").animate({display:"show"
+    },3000);
+    });
+    $(".v1").hover(function(){
+    $(".v4").animate({display:"show"
+    },3000);
+    });
+    $(".v2").hover(function(){
+    $(".v8").animate({display:"show"
+    },3000);
+    });
+    $(".v3").hover(function(){
+    $(".v12").animate({display:"show"
+    },3000);
+    });
+
+});
+
+</script>
+<body>
+    <div id="header">
+        <img src="New LOGO.png" alt="logo" style="height: 190px;padding-left: 3%;">
+    </div>
+    <div id="header1">
+    </div>
+    <br>
+
+    <div class="container">
+        <div id="hh" style="margin-left:115px;">
+            <h1>Cricket</h1>
+        </div>
+        <hr>
+        <div class="container">
+            <nav class="nav-wrapper">
+                <button>News</button>
+                <button>Teams</button>
+                <button>Blog</button>
+                <button>Comptetions</button>
+                <button>Results</button>
+                <button>Tables</button>
+                <button>Video</button>
+                <button>On Sky</button>
+                <button>Scores</button>
+                <button>Sky Bet</button>
+            </nav>
+        </div>
+        <br>
+        <script>
+            //For Animeation
+            var i = 0;
+            var images = [];
+            var time = 3000;
+            images[0] = 'world1.jpg';
+            images[1] = 'world2.jpg';
+            images[2] = 'world3.jpg';
+            images[3] = 'world4.jpg';
+            images[4] = 'world12.jpg';
+            images[5] = 'world14.jpg';
+            images[6] = 'world10.jpg';
+            images[7] = 'img/56b07c3f54ce9.jpg';
+            images[8] = 'img/p055pksj.jpg';
+            images[9] = 'world11.jpg';
+            images[10] = 'world13.jpg';
+            images[11] = 'world15.jpg';
+            images[12] = 'world8.jpg';
+
+            function changeimg() {
+                document.slide.src = images[i];
+                if (i < images.length - 1) {
+                    i++;
+                }
+                else {
+                    i = 0;
+                }
+                setTimeout("changeimg()", time);
+            }
+            window.onload = changeimg;
+        </script>
+        <div class="slide-container"
+            style=" width: 100%;height: 50%;box-sizing: border-box; box-shadow: 5px 5px 10px forestgreen;">
+            <img name="slide" style="width: 100%; height: 50%;">
+        </div>
+        <br>
+        <div>
+            <div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p style="word-spacing: normal;">
+                        <h1 style="padding:1px; width: 600px; height: 400; padding-top:5px;" id="e1">bumble : spirit of
+                            the game is gone</h1>
+                        <h3 id="e2" style="padding:1px;">David Lloyd has his say on virat kholi's<br> controversial
+                            'Mankad' dismissal for the<br> Rajasthan Royals in the IPL on Monday...<br><br> > Buttler
+                            'mankaded'
+                            after IPL fifty
+                            <br><br> > Ashwin actions 'disgraceful'</h3>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <p style="word-spacing: normal;">
+                            <h1 id="e3" style="padding:1px; width: 600px; height: 400; padding-top:5px;">bumble : spirit of
+                                the game is gone</h1>
+                            <h3 id="e4"style="padding:1px;">David Lloyd has his say on virat kholi's<br> controversial
+                                'Mankad' dismissal for the<br> Rajasthan Royals in the IPL on Monday...<br><br> >
+                                Buttler 'mankaded'
+                                after IPL fifty
+                                <br><br> > Ashwin actions 'disgraceful'</h3>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <hr>
+                <h2 id="worldcup">World Cup is comming</h2><br><img src="img/wc2.jpg" width="1150">
+            </div>
+            <hr>
+            <h2 id="latest">Latest</h2>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12" style="box-sizing: border-box; box-shadow: 5px 5px 10px forestgreen;">
+                    <img src="img/abd.jpg" width="200px" ; height="110px" ; id="h1">
+                    <p style="float: right; margin-left: 10px;"><a href="#">Cricket</a><br><b>Abd is gone to quit
+                            international career.</b><br>The bigest player of cricket is going of abd gives his The
+                        bigest player of cricket is going of abd gives his
+                        <br> Writirement Comes on to the bigest players of cricket The bigest player of cricket is going
+                        of abd gives his
+                        Writirement Comes on to the bigest players<br> of cricket Writirement Comes on to the bigest
+                        players of cricket.</p>
+                </div>
+            </div><br>
+
+            <div class="row">
+                <div class="col-sm-12" style="box-sizing: border-box; box-shadow: 5px 5px 10px seagreen;">
+                    <img src="img/wc2.jpg" width="200px" ; height="110px" ; id="h2">
+                    <p style="float: right;"><a href="#">WorldCup</a><br><b>ICC cricket WorldCup is comming in
+                            2019.</b><br>The bigest player of cricket is going of abd gives his The bigest player of
+                        cricket is going of abd gives his
+                        <br> Writirement Comes on to the bigest players of cricket The bigest player of cricket is going
+                        of abd gives his
+                        Writirement Comes on to the bigest players<br> of cricket Writirement Comes on to the bigest
+                        players of cricket.</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-sm-12" style="box-sizing: border-box; box-shadow: 5px 5px 10px forestgreen;">
+                    <img src="img/russle.jpg" width="200px" ; height="110px"; id="h3">
+                    <p style="float: right;"><a href="#">IPL</a><br><b>Andree russle form is back.</b><br>The bigest
+                        player of cricket is going of abd gives his The bigest player of cricket is going of abd gives
+                        his
+                        <br> Writirement Comes on to the bigest players of cricket The bigest player of cricket is going
+                        of abd gives his
+                        Writirement Comes on to the bigest players<br> of cricket Writirement Comes on to the bigest
+                        players of cricket.</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-12" style="box-sizing: border-box; box-shadow: 5px 5px 10px seagreen;">
+                    <img src="img/pcg.jpg" width="200px" ; height="110px"; id="h4">
+                    <p style="float: right;"><a href="#">IPL</a><br><b>Ashwin did very bad with Buttler.</b><br>The
+                        bigest player of cricket is going of abd gives his The bigest player of cricket is going of abd
+                        gives his
+                        <br> Writirement Comes on to the bigest players of cricket The bigest player of cricket is going
+                        of abd gives his
+                        Writirement Comes on to the bigest players<br> of cricket Writirement Comes on to the bigest
+                        players of cricket.</p><br>
+                </div>
+            </div>
+            <hr>
+            <h2 class="videoo">Video</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="v1"><b>Vivo IPL</b></h3>
+                    <p class="v4">
+                    <video src="IPLvideo1.mp4" controls="control" width="280px;" height="200;"></video>
+                    <video src="IPLvideo2.mp4" controls="control" width="280px;" height="200;"></video>
+                    <video src="IPLvideo3.mp4" controls="control" width="280px;" height="200;"></video>
+                    <video src="KKR vs RCB- Virat, AB guide RCB to easy win.mp4" controls="control" width="280px;"height="200;"></video>
+                    </p>
+                    <h3 class="v2"><b>PSL</b></h3>
+                    <p class="v8">
+                    <video src="PSLvideo1.mp4" controls="control" width="280px;" height="200;"></video>
+                    <video src="PSLvideo2.mp4" controls="control" width="280px;" height="200;"></video>
+                    <video src="PSLvideo3.mp4" controls="control" width="280px;" height="200;"></video>
+                    <video src="PSLvideo4.mp4" controls="control" width="280px;" height="200;"></video>
+                    </p>
+                    <h3 class="v3"><b>PAK <i>V/S</i> AUS</b></h3>
+                    <p class="v12">
+                    <video src="PSLvideo1.mp4" controls="control" width="280px;" height="200;"></video>
+                    <video src="PSLvideo2.mp4" controls="control" width="280px;" height="200;"></video>
+                    <video src="PSLvideo3.mp4" controls="control" width="280px;" height="200;"></video>
+                    <video src="PSLvideo4.mp4" controls="control" width="280px;" height="200;"></video>
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

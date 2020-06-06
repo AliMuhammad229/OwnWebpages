@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sky Sports</title>
+    <script src="jquery/jquery-1.11.3.js"></script>
+</head>
+<style>
+    #header {
+        background-color: green;
+        height: 150px;
+        width: 50%;
+        background-size: 100%;
+        display: block;
+        text-align: center;
+    }
+    #header1{
+       width: 50%;
+       float: right;
+       margin-top:-150px;
+       height: 150px; 
+       background-color: seagreen;   
+       
+    }
+
+
+    img {
+        height: 180px;
+
+    }
+
+    /* button */
+
+    .top-btn {
+        margin-top: 1%;
+        margin-bottom: -6px;
+        padding: 20px 40px;
+        margin-left: 2%;
+        border-style: 1px;
+
+    }
+
+    .top-btn :hover {
+        color: darkgrey;
+        display: inline;
+
+
+    }
+
+    
+    .fa-user:hover {
+        color: dimgray;
+        display: inline-block;
+    }
+
+    .button {
+        border-bottom-style: ridge;
+
+    }
+
+    /* images */
+
+    .images {
+        margin-top: 5%;
+        text-align: center;
+        padding-bottom: 3%;
+        
+    }
+    /* .images:hover{
+        transform: rotate(360deg);
+    } */
+    .imgs1 {
+        margin-bottom: 3%;
+    }
+    #h1{
+        transition: all 0.8s;
+    }
+    #h1:hover{
+        transform: rotate(360deg);
+    }
+
+    #h2{
+        transition: all 0.8s;
+    }
+    #h2:hover{
+        transform: rotate(360deg);
+    }
+    #h3{
+        transition: all 0.8s;
+    }
+    #h3:hover{
+        transform: rotate(360deg);
+    }
+    #h4{
+        transition: all 0.8s;
+    }
+    #h4:hover{
+        transform: rotate(360deg);
+    }
+    #h5{
+        transition: all 0.8s;
+    }
+    #h5:hover{
+        transform: rotate(360deg);
+    }
+    #h6{
+        transition: all 0.8s;
+    }
+    #h6:hover{
+        transform: rotate(360deg);
+    }
+
+    /*Dropdown Menu */
+       .menu {
+        width: 300px;
+        height: 300px;
+        border-style: initial;
+        background-color: lightgreen;
+        margin: 80px;
+        box-sizing: content-box;
+        display: none;
+        margin-top: -12px;
+        margin-left: 5%;
+        margin-top: -10px;
+        position: static;
+
+    }
+    ul{
+        list-style: none;
+        padding: 25px;
+        display: block;
+    }
+    ul li{
+        padding-top: 20px;
+        text-decoration: none;
+        
+    }
+    #ul2{
+        margin-left: 150px;
+        margin-top: -255px;
+        
+    }
+    #ul1{
+        margin-left: 30px;
+       
+    }
+    
+
+
+    /*Slider Images*/
+
+    .slide-container {
+        width: 80%;
+        height: 550px;
+        margin: 20px auto;
+        position: relative;
+        margin-top: 3%;
+        overflow: hidden;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 10px grey;
+    }
+    .slide-conatiner img{
+        padding-bottom: 2%;
+    }
+
+
+    /*videos */
+
+    .video {
+        margin-top: 4%;
+        text-align: center;
+    }
+    #vdp{
+        padding-top: 10px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: relative;
+        animation: text 2s linear;
+    }
+    #vdp1{
+        padding-top: 10px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: relative;
+        animation: text1 2s linear;
+    }
+    #vdp2{
+        padding-top: 10px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        position: relative;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        animation: text2 2s linear;
+    }
+    @keyframes text{
+        0%{
+            color: black;
+            margin-bottom: -6px;
+            
+        }
+        30%{
+             color: lightgreen; 
+            margin-bottom: -6px;
+            letter-spacing: 20px;
+        }
+        70%{
+             color: black; 
+            margin-bottom: -6px;
+            letter-spacing: 2px;
+        }
+    }
+    @keyframes text1{
+        0%{
+            color: black;
+            margin-bottom: -6px;
+            
+        }
+        85%{
+            color: lightgreen;
+            margin-bottom: -6px;
+            letter-spacing: 15px;
+        }
+        100%{
+            /* color: black; */
+            margin-bottom: -6px;
+            letter-spacing: 2px;
+        }
+    }
+    @keyframes text2{
+        0%{
+            color: black;
+            margin-bottom: -6px;
+            
+        }
+        30%{
+             color: lightgreen; 
+            margin-bottom: -6px;
+            letter-spacing: 20px;
+        }
+        85%{
+             /* color: black;  */
+            margin-bottom: -6px;
+            letter-spacing: 2px;
+        }
+    }
+
+    /* Tending */
+
+    .trendingpg {
+        margin-top: 2%;
+        text-align: justify;
+        background-color: #f1f2f6;
+    }
+
+    .trendingpg1 {
+        text-align: left;
+        padding-top: 4%;
+        margin-left: 2%;
+        display: none;
+        
+    }
+
+    .trendingpg2 {
+        margin-top: -395px;
+        float: right;
+        margin-right: 8%;
+        display: none;
+        
+
+    }
+
+    #trending-btn:hover {
+        display: inline;
+        color: forestgreen;
+    }
+
+    /* video col*/
+
+
+    #vd-btn:hover {
+        display: inline;
+        color: forestgreen;
+    }
+
+    .v1 {
+        padding: 10px 32px;
+        margin-bottom: 2%;
+        
+    }
+
+    .v2 {
+        padding: 10px 32px;
+        margin-bottom: 2%;
+       
+    }
+
+    /* boxes */
+
+    #live-btn:hover {
+        display: inline;
+        color: forestgreen;
+    }
+    .boxes{
+        margin-bottom: 50px;
+    }
+
+    .box1 {
+        margin-top: 3%;
+        padding: 3%;
+        margin-left: 6%;
+        margin-bottom: 2%;
+        border-style: ridge;
+        margin-right: 75%;
+        text-align: center;
+        border-radius: 6px 6px 6px 6px;
+        border-color: darkgrey;
+        display: none;
+        
+    }
+
+    .box2 {
+        margin-bottom: 2%;
+        padding: 3%;
+        margin-left: 30%;
+        border-style: ridge;
+        margin-right: 50%;
+        text-align: center;
+        margin-top: -250px;
+        border-radius: 6px 6px 6px 6px;
+        border-color: darkgrey;
+        display: none;
+    }
+
+    .box3 {
+        margin-top: 1%;
+        margin-bottom: 2%;
+        padding: 3%;
+        margin-left: 55%;
+        margin-right: 25%;
+        border-style: ridge;
+        text-align: center;
+        margin-top: -252px;
+        margin-bottom: 2%;
+        /* padding-top: 2%; */
+        border-radius: 6px 6px 6px 6px; 
+        border-color: darkgrey;
+        display: none; 
+    }
+
+    #link1:hover {
+        color: blue;
+        display: inline;
+    }
+
+    #link2:hover {
+        color: black;
+        display: inline;
+    }
+
+    #link3:hover {
+        color: blue;
+        display: inline;
+    }
+
+    #link4:hover {
+        color: black;
+        display: inline;
+    }
+
+    #link5:hover {
+        color: blue;
+        display: inline;
+    }
+
+    #link6:hover {
+        color: black;
+        display: inline;
+    }
+
+    /*footer*/
+
+    .footer {
+        background-color:gainsboro;
+        padding-top: 0px;
+        padding: 5px;
+    }
+
+    .links {
+        margin-top: 6%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .fa-facebook:hover {
+        color: blue;
+        font-size: 25px;
+    }
+
+    .fa-twitter:hover {
+        color: skyblue;
+        font-size: 25px;
+    }
+
+    .fa-google:hover {
+        color: orangered;
+        font-size: 25px;
+    }
+
+    #twt:hover {
+        display: inline;
+        color: white;
+        font-size: 20px;
+    }
+
+    #fb:hover {
+        display: inline;
+        color: white;
+        font-size: 20px;
+    }
+
+    #google:hover {
+        display: inline;
+        color: white;
+        font-size: 20px;
+    }
+
+    .personalinks {
+        margin-left: 5%;
+        padding: 2%;
+        border-top-style: solid;
+        border-top-width: thin;
+        margin-right: 5%;
+    }
+
+    .info1 {
+        margin-left: 5%;
+    }
+
+    .info2 {
+        margin-left: 30%;
+        margin-top: -200px;
+    }
+
+    .info3 {
+        margin-left: 55%;
+        margin-top: -190px;
+    }
+
+    #p1:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p2:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p3:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p4:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p5:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p6:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p7:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p8:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p9:hover {
+        display: inline-block;
+        color: lightgreen;
+
+    }
+
+
+    .implinks {
+        margin-left: 5%;
+        padding: 2%;
+        border-top-style: solid;
+        border-top-width: thin;
+        margin-right: 5%;
+
+    }
+
+    #lastbtn1:hover {
+        color: red;
+        display: inline-block;
+    }
+
+    #lastbtn2:hover {
+        color: red;
+        display: inline-block;
+    }
+
+    #lastbtn3:hover {
+        color: red;
+        display: inline-block;
+    }
+
+
+    @media screen and (max-width: 900px) {
+
+        .col-1 {
+            width: 8.33%;
+        }
+        .col-2 {
+            width: 16.66%;
+        }
+        .col-3 {
+            width: 25%;
+        }
+        .col-4 {
+            width: 33.32%;
+        }
+        .col-5{
+            width: 41.65%; 
+        }
+        .col-6{
+                width: 50%;
+        }
+        .col-7{
+            width: 58.31%;
+        }
+        .col-8{
+            width: 66.64%;
+        }
+        .col-9{
+            width: 75%;  
+        }
+        .col-10{
+            width: 83.3%;
+        }
+        .col-11{
+            width: 91.63%; 
+        }
+        .col-12{
+            width: 100%;
+        } 
+    }
+    /* @media screen and (min-width: 500px) {
+
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.32%;
+}
+.col-5{
+    width: 41.65%; 
+}
+.col-6{
+        width: 50%;
+}
+.col-7{
+    width: 58.31%;
+}
+.col-8{
+    width: 66.64%;
+}
+.col-9{
+    width: 75%;  
+}
+.col-10{
+    width: 83.3%;
+}
+.col-11{
+    width: 91.63%; 
+}
+.col-12{
+    width: 100%;
+} 
+} */
+</style>
+
+<body>
+        <script>
+            //For Dropdown Menu:
+          $(document).ready(function () {
+            $("#dropmenubtn").mouseenter(function () {
+                $(".menu").toggle(500);
+            });
+        });
+
+        //For Dropdown video
+        $(document).ready(function(){
+             $("#trending-btn").mouseenter(function(){
+                 $(".trendingpg1").toggle(500);
+                 $(".trendingpg2").toggle(500);
+             });
+        });
+
+        //for liveskysports
+        $(document).ready(function(){
+             $("#live-btn").mouseenter(function(){
+                 $(".box1").toggle(500);
+                 $(".box2").toggle(500);
+                 $(".box3").toggle(500);
+             });
+        });
+           //For Animeation
+            var i =0;
+            var images = [];
+            var time = 2000;
+            images[0] = 'c1.jpg';
+            images[1] = 'c2.jpg';
+            images[2] = 'cricket3.jpg';
+            images[3] = 'f1.jpg';
+            images[4] = 'f2.jpg';
+            images[5] = 'f3.jpg';
+            images[6] = 'f4.jpg';
+            images[7] = 'foot5.jpg';
+            images[8] = 'w1.jpg';
+            images[9] = 'w2.jpg';
+            images[10] = 'b1.png';
+            images[11] = 'b2.jpg';
+            images[12] = 'b3.jpg';
+
+            function changeimg(){
+                document.slide.src=images[i];
+                if(i < images.length - 1){
+                    i++;
+                }
+                else{
+                    i = 0;
+                }
+                setTimeout("changeimg()",time);
+            }
+            window.onload = changeimg;
+            </script>
+    <div class="row">
+        <div id="header" class="col -12">
+            <img src="New LOGO.png" alt="logo" style="height: 190px;padding-left: 3%;">
+        </div>
+    </div>
+    <div class="row">
+        <div id="header1" class="col -12">
+    </div>
+    </div>
+    <div class="row">
+    <div class="col -10 button">
+        <div class="top-btn">
+            <a href="Home.html">
+                <button style="border: 0px; background-color: white; margin-left: 3%; font-size: 18px;">Home</button></a>
+            <a href="#">
+                <button style="border: 0px; background-color: white; margin-left: 3%; font-size: 18px;" id="dropmenubtn">Sports</button></a>
+            <a href="#">
+                <button style="border: 0px; background-color: white; margin-left: 3%; font-size: 18px;">Video</button></a>
+            <a href="#">
+                <button style="border: 0px; background-color: white; margin-left: 3%; font-size: 18px;">TV</button></a>
+            <a href="contact us.html" target="_blank">
+                <button style="border: 0px; background-color: white; margin-left: 3%; font-size: 18px;">Contact Us</button></a>
+            <a href="About Us.html" target="_blank">
+                <button style="border: 0px; background-color: white; margin-left: 3%; font-size: 18px;">About Us</button></a>
+            <button style="background-color:darkgreen; border: darkred; color: white; padding: 10px; margin-left: 6%; margin-top: -5%;">Watch Sky Sports</button>
+            <span class="fa fa-user" style="padding: 1%; margin-left: 2%; font-size: 18px;"> Log In</span>
+            <input type="text" placeholder="Search Sky Sports" style="padding: 8px; margin-left: 4%; border-style: 1px; border-color:black; border-top-left-radius: 4px;
+            border-top-right-radius: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;"/>
+        </div>
+    </div>
+    </div>
+    <div class="menu">
+            <ul id="ul1">
+                <li>
+                    <a href="Cricket.html" target="_blank" style="color: darkgreen; text-decoration: none;">Cricket</a>
+                </li>
+                <li>
+                    <a href="footbal.html" target="_blank" style= "color: darkgreen; text-decoration: none;">Football</a>
+                </li>
+                <li>
+                    <a href="rucby.html" target="_blank" style="color: darkgreen; text-decoration: none;">Rugby</a>
+                </li>
+                <li>
+                    <a href="#" style="color: darkgreen; text-decoration: none;">Hockey</a>
+                </li>
+                <li>
+                    <a href="wwe.html" target="_blank" style="color: darkgreen; text-decoration: none;">WWE</a>
+                </li>
+            </ul>
+            <ul id="ul2">
+                <li>
+                    <a href="Boxing3.html" target="_blank" style="color: darkgreen; text-decoration: none;">Boxing</a>
+                </li>
+                <li>
+                    <a href="Racing.html" target="_blank" style="color: darkgreen; text-decoration: none;">Racing</a>
+                </li>
+                <li>
+                    <a href="Cycling2.html" target="_blank" style="color: darkgreen; text-decoration: none;">Cycling</a>
+                </li>
+                <li>
+                    <a href="Golf4.html" target="_blank" style="color: darkgreen; text-decoration: none;">Golf</a>
+                </li>
+                <li>
+                    <a href="baskitball.html" target="_blank" style="color: darkgreen; text-decoration: none;">Basketball</a>
+                </li>
+            </ul>
+    </div>
+    <div class="col-6 slide-container">
+            <img name="slide" style="width: 100%; height: 100%;">
+    </div>
+    <div class="images">
+        <div class="imgs1 col-12">
+            <img src="download (1).jpg" alt="pic1" style="width:240px;box-sizing: border-box;box-shadow: 5px 5px 10px grey;" id="h1">
+            <img src="download (2).jpg" alt="pic2" style="width:240px; box-sizing: border-box;box-shadow: 5px 5px 10px grey;" id="h2">
+            <img src="download (3).jpg" alt="pic3" style="width:240px; box-sizing: border-box;box-shadow: 5px 5px 10px grey;" id="h3">
+        </div>
+        <div class="imgs2 col-12">
+            <img src="download (7).jpg" alt="pic4" style="width:240px;box-sizing: border-box;box-shadow: 5px 5px 10px grey;" id="h4">
+            <img src="download (13).jpg" alt="pic5" style="width:240px;box-sizing: border-box;box-shadow: 5px 5px 10px grey;" id="h5">
+            <img src="images.jpg" alt="pic5" style="width:240px;box-sizing: border-box;box-shadow: 5px 5px 10px grey;" id="h6">
+        </div>
+    </div>
+
+    <div class="video">
+        <div class="vid col-3">
+            <video id="vd1" src="CT17 Final Commentator Prediction.mp4" poster="download (4).jpg"
+                controls="controls" style="height: 400px; width: 700px;">
+                
+            </video>
+            <p id="vdp">Pakistan Won The CT17 First Time Ever</p>
+            <video id="vd2" src="unknown_1553713800.mp4" poster="g.jpg"
+                controls="controls" style="height: 400px; width: 700px;"></video>
+                <p id="vdp1">West Indies Won T20 WC 2012 Second Time</p>
+            <video id="vd3" src="Portugal v Spain - 2018 FIFA World Cup Russia™ - MATCH 3.mp4" poster="download (6).jpg"
+                controls="controls" style="height: 400px; width:  700px;"></video>
+                <p id="vdp2">CR7 Leading Upfront Against Spain</p>
+        </div>
+    </div>
+    <div class="trendingpg">
+        <div style="text-align: justify; margin-left: 8%;">
+            <a href="#" style="color: forestgreen;">
+                <button id="trending-btn" style="border: 0px; background-color:#f1f2f6; font-size: 30px; margin-top: 4%;">Trending</button>
+            </a>
+        </div>
+        <div class="col-5 trendingpg1">
+            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                
+                    <p> 1. Pakistan Lost The Series(PAK V/S AUS)</p>
+
+                    <br>
+                    <p> 2. CSK Continue on winning track.</p>
+
+                    <br>
+                    <p> 3. Europa Qualifiers Update: England & Armania (1-0)</p>
+
+                    <br>
+                    <p> 4. CR7 Hatrick Against Atlico Madrid (3-0) JUVE!!!!</p>
+
+                    <br>
+                    <p>5. Wrestlemania a big event in April.</p>
+                
+            </h3>
+        </div>
+        <br>
+        <div class="col-5 trendingpg2">
+            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                
+                    <p> 6. Zidane Re-join Hala Madrid.</p>
+
+                    <br>
+                    <p> 7. Madrid offers $280M to Mbappe.</p>
+
+                    <br>
+                    <p> 8. Pakistan looks to upfront against Austrailia in 4th ODI.</p>
+
+                    <br>
+                    <p> 9. Pogba said: "it's an honour to played with Madrid".</p>
+
+                    <br>
+                    <p> 10. How could Chelsea replace Eden Hazard.</p>
+                
+            </h3>
+        </div>
+    </div>
+    <br>
+    <div class="videos col-12">
+        <a href="#" style="color: forestgreen;">
+            <button style="border: 0px; background-color: white; font-size: 30px; margin-top: 3%; margin-left: 8%;margin-bottom: 2%;"
+                id="vd-btn">Videos</button>
+        </a>
+        <div class="v1">
+            <video id="vd4" src="HIGHLIGHTS- Juventus vs Atletico Madrid - 3-0 - Ronaldo hat-trick completes comeback!.mp4"
+                controls="controls" poster="download.png" style="height: 20%; width: 30%;">
+            </video>
+            <video id="vd5" src="The 3 Basics to Playing Polo Like a Pro.mp4" controls="controls" poster="download (9).jpg"
+                style="height: 20%; width: 30%; margin-left: 1%;">
+            </video>
+            <video id="vd6" src="Top 10 Raw moments- WWE Top 10, March 25, 2019.mp4" style="height: 20%; width: 30%; margin-left: 1%;"
+                controls="controls" poster="download (11).jpg">
+            </video>
+        </div>
+        <div class="v2">
+            <video id="vd7" src="AB de Villiers fastest 100 of all time.mp4" controls="controls" poster="images (1).jpg"
+                style="height: 20%; width: 30%;">
+            </video>
+            <video id="vd8" src="Virat Kohli - Hall of Fame (Inspirational Video Song).mp4" controls="controls"
+                poster="e.jpg" style="height: 20%; width: 30%; margin-left: 1%;">
+            </video>
+            <video id="vd9" src="Saul 'Canelo' Alvarez vs Amir Khan HD Highlights.mp4" style="height: 20%; width: 30%; margin-left: 1%;"
+                controls="controls" poster="download (12).jpg">
+            </video>
+        </div>
+
+    </div>
+
+
+
+    <div class="boxes">
+        <a href="#" style="color: forestgreen;">
+            <button style="border: 0px; background-color: white; font-size: 30px;margin-top: 3%; margin-left: 8%;" id="live-btn">Live Sky Sports</button></a>
+        <div class="box1 col-2">
+            <a href="#">
+                <button id="link1" style="border: 0px; background-color: white; padding-bottom: 1%;">Football</button></a>
+            <br>
+            <a href="https://www.google.com.pk/search?q=champions+league&rlz=1C1CHBF_enPK809PK809&oq=champiop&aqs=chrome.1.69i57j0l5.9060j1j7&sourceid=chrome&ie=UTF-8"
+                target="_blank" style="color: black;">
+                <button id="link2" style="border: 0px; padding-bottom: 1%; background-color: white; font-size: 20px;">Champions League</button></a>
+            <br>
+            <a href="#">
+                <button style="border: 0px; background-color: white;">Live Now</button></a>
+            <br>
+            <img src="download (1).png" style="width: 80px; height: 50px;">
+        </div>
+        <div class="box2 col-4">
+            <a href="#" style="color: black;">
+                <button id="link3" style="border: 0px; background-color: white; padding-bottom: 1%;">Cricket</button></a>
+            <br>
+            <a href="https://www.google.com.pk/search?q=ipl&rlz=1C1CHBF_enPK809PK809&oq=ip&aqs=chrome.2.69i57j69i60j0l4.14079j1j4&sourceid=chrome&ie=UTF-8"
+                target="_blank" style="color: black;">
+                <button id="link4" style="border: 0px; padding-bottom: 1%; background-color: white; font-size: 20px;">Indian Premier Laegue</button></a>
+            <br>
+            <a href="#">
+                <button style="border: 0px; background-color: white;">Live Now</button></a>
+            <br>
+            <img src="download (2).png" alt="logo" style="width: 80px; height: 50px;">
+        </div>
+        <div class="box3 col-6">
+            <a href="#" style="color: black;">
+                <button id="link5" style="border: 0px; background-color: white; padding-bottom: 1%;">Golf</button></a>
+            <br>
+            <a href="https://www.golf.com/" target="_blank" style="color: black;">
+                <button id="link6" style="border: 0px;background-color: white; font-size: 20px; padding-bottom: 1%;">WGC Match Play:
+                    <br>Featured Groups</button></a>
+            <br>
+            <a href="#">
+                <button style="border: 0px; background-color: white;">at 3:15pm</button></a>
+            <br>
+            <img src="images.png" alt="logo" style="width: 80px; height: 50px;">
+        </div>
+    </div>
+
+
+    <div class="footer col-12">
+        <div class="links">
+            <span class="fa fa-twitter">
+                <a href="https://twitter.com/SkySports" target="_blank" style="color: black;">
+                    <button style="border: 0px; background-color: gainsboro;" id="twt">Twitter</button>
+                </a>
+            </span>
+            <span class="fa fa-facebook">
+                <a href="https://www.facebook.com/SkySports" target="_blank" style="color: black;">
+                    <button style="border: 0px; background-color: gainsboro;" id="fb">Facebook</button>
+                </a>
+            </span>
+            <span class="fa fa-google">
+                <a href="https://plus.google.com/107763292354713948501" target="_blank" style="color: black;">
+                    <button style="border: 0px; background-color: gainsboro;" id="google">Google</button>
+                </a>
+            </span>
+        </div>
+        <br>
+        <div class="personalinks">
+            <div class="info1 col-6">
+                <ul>
+                    <h3>Sky Sports</h3>
+                    <a href="#">
+                        <button id="p1" style="border: 0px;background-color: gainsboro; padding-bottom: 1%; font-size: 15px;">Get Sky Sports</button></a>
+                    <br>
+                    <a href="#">
+                        <button id="p2" style="border: 0px;background-color: gainsboro; padding-bottom: 1%; font-size: 15px;">Sky Sports Apps</button></a>
+                    <br>
+                    <a href="#">
+                        <button id="p3" style="border: 0px;background-color: gainsboro; font-size: 15px;">Team Sky</button></a>
+                    <br>
+                </ul>
+            </div>
+            <div class="info2 col-9">
+                <ul>
+                    <h3>Partners</h3>
+                    <a href="#">
+                        <button id="p4" style="border: 0px;background-color: gainsboro; padding-bottom: 1%; font-size: 15px;">Sky Bet</button></a>
+                    <br>
+                    <a href="#">
+                        <button id="p5" style="border: 0px;background-color: gainsboro; padding-bottom: 1%; font-size: 15px;">Super 6</button></a>
+                    <br>
+                    <a href="#">
+                        <button id="p6" style="border: 0px;background-color: gainsboro; font-size: 15px;">Cricket 365</button></a>
+                    <br>
+                </ul>
+            </div>
+            <div class="info3 col-12">
+                <ul>
+                    <h3>Sky Sports Channels</h3>
+                    <a href="#">
+                        <button id="p7" style="border: 0px;background-color: gainsboro; padding-bottom: 2%; font-size: 15px;">Get Sky Sports</button></a>
+                    <br>
+                    <a href="#">
+                        <button id="p8" style="border: 0px;background-color: gainsboro; padding-bottom: 2%; font-size: 15px;">Sky Sports F1</button></a>
+                    <br>
+                    <a href="#">
+                        <button id="p9" style="border: 0px;background-color: gainsboro; font-size: 15px;">Word for Sky</button></a>
+                    <br>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="implinks">
+
+            <a href="#">
+                <button id="lastbtn1" style="border: 0px; background-color: gainsboro; font-size: 16px;">Terms & Conditions</button></a>
+            <a href="#">
+                <button id="lastbtn2" style="border: 0px; background-color: gainsboro; font-size: 16px; padding-left: 2%;">Privacy & Cookies</button></a>
+            <a href="#">
+                <button id="lastbtn3" style="border: 0px; background-color: gainsboro; font-size: 16px; padding-left: 2%;">Contact Us</button></a>
+            <br>
+            <p style="font-size: 16px; color: firebrick;">@ 2019 Sky Us</p>
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

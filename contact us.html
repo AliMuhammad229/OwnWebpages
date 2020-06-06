@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-3.3.6/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="jquery/jquery-1.11.3.js"/>
+    <title>Sky Sports</title>
+</head>
+<style>
+    /* header*/
+
+    #header {
+        background-color: green;
+        height: 150px;
+        width: 50%;
+        background-size: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    #header1 {
+        width: 50%;
+        float: right;
+        margin-top: -158px;
+        height: 150px;
+        background-color: seagreen;
+
+    }
+
+    .well-sm {
+        margin-top: -8px;
+        background-color: aliceblue;
+    }
+
+
+    #ul1 {
+        list-style: none;
+        /* margin-top: 20px; */
+        font-size: 20px;
+        /* padding-left: -10px; */
+        background-color: aliceblue;
+        padding-block-end: 2%;
+
+    }
+
+    ul li a {
+        color: black;
+        float: left;
+        margin-top: 20px;
+        width: 150px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        padding: 20px;
+        transition: all 0.8s;
+
+    }
+
+    ul li a:hover {
+        display: block;
+        color: darkgray;
+        transform: rotate(360deg);
+    }
+
+    .fa-user {
+        transition: all 0.8s;
+    }
+
+    .fa-user:hover {
+        color: darkgray;
+        transform: rotate(360deg);
+    }
+
+    /*Contact US*/
+
+    #h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: relative;
+        letter-spacing: 2px;
+        animation: text 2s linear;
+        padding-bottom: 8px;
+        border-bottom-style: groove;
+    }
+
+    @keyframes text {
+        0% {
+            color: black;
+            margin-bottom: -6px;
+        }
+        30% {
+            color: lightgreen;
+            margin-bottom: -6px;
+            letter-spacing: 20px;
+        }
+        70% {
+            color: black;
+            margin-bottom: -6px;
+            letter-spacing: 2px;
+        }
+    }
+
+    #h1:hover {
+        color: darkgreen;
+    }
+
+    #para {
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    #smedia:hover {
+        background-color: darkgray;
+        display: inline-block;
+        color: white;
+    }
+
+    /*form*/
+
+    #h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: relative;
+        letter-spacing: 2px;
+        animation: text 2s linear;
+        padding-bottom: 8px;
+
+    }
+
+    @keyframes text {
+        0% {
+            color: black;
+            margin-bottom: -6px;
+        }
+        30% {
+            color: lightgreen;
+            margin-bottom: -6px;
+            letter-spacing: 20px;
+        }
+        70% {
+            color: black;
+            margin-bottom: -6px;
+            letter-spacing: 2px;
+        }
+    }
+
+    #h2:hover {
+        color: darkgreen;
+    }
+
+    .form-wrapper {
+        margin-top: 15px;
+        /* position: absolute; */
+    }
+    input:hover{
+        background-color: gainsboro;
+    }
+    #txtar:hover{
+        background-color: gainsboro;
+    }
+    .checkbox{
+        margin-top: 20px;
+    }
+    #imp:hover{
+        color: white;
+        background-color: darkgray;
+        display: inline-block;
+    }
+        /*footer*/
+
+    .footer {
+        background-color: gainsboro;
+        padding-top: 0px;
+        padding: 5px;
+        
+    }
+
+    .links {
+        margin-top: 6%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .fa-facebook:hover {
+        color: blue;
+        font-size: 25px;
+    }
+
+    .fa-twitter:hover {
+        color: skyblue;
+        font-size: 25px;
+    }
+
+    .fa-google:hover {
+        color: orangered;
+        font-size: 25px;
+    }
+
+    #twt:hover {
+        display: inline;
+        color: white;
+        font-size: 18px;
+    }
+
+    #fb:hover {
+        display: inline;
+        color: white;
+        font-size: 18px;
+    }
+
+    #google:hover {
+        display: inline;
+        color: white;
+        font-size: 18px;
+    }
+
+    .personalinks {
+        margin-left: 5%;
+        padding: 2%;
+        margin-right: 5%;
+        margin-bottom: 25px;
+    }
+
+    .info1 {
+        margin-left: 5%;
+    }
+
+    .info2 {
+        margin-left: 30%;
+        margin-top: -140px;
+    }
+
+    .info3 {
+        margin-left: 55%;
+        margin-top: -133px;
+      
+    }
+
+    #p1:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p2:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p3:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p4:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p5:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p6:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p7:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p8:hover {
+        display: inline-block;
+        color: lightgreen;
+    }
+
+    #p9:hover {
+        display: inline-block;
+        color: lightgreen;
+
+    }
+
+
+    .implinks {
+        margin-left: 5%;
+        padding: 2%;
+        margin-right: 5%;
+    }
+
+    #lastbtn1:hover {
+        color: red;
+        display: inline-block;
+    }
+
+    #lastbtn2:hover {
+        color: red;
+        display: inline-block;
+    }
+
+    #lastbtn3:hover {
+        color: red;
+        display: inline-block;
+    }
+    #lastbtn3{
+        padding-bottom: 20px;
+    } 
+
+   /*checkbox*/
+
+</style>
+
+<body>
+    <div>
+        <div id="header">
+            <img src="New LOGO.png" alt="logo" style="height: 190px;padding-left: 3%;">
+        </div>
+        <div id="header1">
+        </div>
+
+        <div class="well-sm">
+                <div class="container">
+            
+                        <ul id="ul1">
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Sports</a>
+                            </li>
+                            <li>
+                                <a href="">Video</a>
+                            </li>
+                            <li>
+                                <a href="">Tv</a>
+                            </li>
+                            <li>
+                                <a href="">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="">About Us</a>
+                            </li>
+                            <li>
+                                <span class="fa fa-user" style="margin-top: 42px; margin-left: 50px;"> Log In</span>
+                            </li>
+            
+                        </ul>
+            
+                    </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="contact">
+                <h1 id="h1">Contact Us</h1>
+                <br>
+                <p id="para">
+                    This page is to contact skysports.com with specific website feedback.
+                    <br>
+                    <br> If you have any other enquiries about Sky or Sky Sports please use the links in the Useful Contacts
+                    box.
+                    <br> For Advertising & Sponsorship opportunities please visit
+                    <br>
+                    <br>
+                    <a href="#" id="smedia">www.skymedia.co.pk</a>
+                    <hr>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+                <h2 id="h2">Contact Form</h2>
+                <hr>
+                <div class="form-wrapper">
+                    <div class="inf1">
+                        <label class="lbl1" style="font-size: 15px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">First Name</label>
+                        <input type="text" style="border-radius: 3px 3px 3px 3px; padding: 4px; margin-left: 20px;">
+
+                    </div>
+                    <br>
+                    <div class="inf2">
+                        <label class="lbl2" style="font-size: 15px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Last Name</label>
+                        <input type="text" style="border-radius: 3px 3px 3px 3px; padding: 4px; margin-left: 22px;">
+                    </div>
+                    <br>
+                    <div class="inf13">
+                        <label class="lbl3" style="font-size: 15px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Email</label>
+                        <input type="text" style="border-radius: 3px 3px 3px 3px; padding: 4px; margin-left: 59px;">
+                    </div>
+                    <br>
+                    <div class="inf4">
+                        <label class="lbl4" style="font-size: 15px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: -100px;">Message</label>
+                        <br>
+                        <textarea maxlength="2000" cols="40" id="txtar" rows="10" style="margin-left: 100px; margin-top: -2%; border-radius: 3px 3px 3px 3px"></textarea>
+                    </div>
+                    <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="ch1">
+                                <span>I agree to these <a href="#" id="imp">Terms and conditions</a></span>
+                            </label>
+                    </div>
+                    <div class="submit">
+                            <button class="btn btn-success" style="margin-top: 10px; font-size: 18px;">Submit</button>
+                    </div>
+                    <br>
+                    <br>
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="footer">
+                <div class="container">
+                <div class="links">
+                    <ul>
+                    <span class="fa fa-twitter">
+                        <a href="https://twitter.com/SkySports" target="_blank" style="color: black;">
+                            <button style="border: 0px; background-color: gainsboro;" id="twt">Twitter</button>
+                        </a>
+                    </span>
+                    <span class="fa fa-facebook">
+                        <a href="https://www.facebook.com/SkySports" target="_blank" style="color: black;">
+                            <button style="border: 0px; background-color: gainsboro;" id="fb">Facebook</button>
+                        </a>
+                    </span>
+                    <span class="fa fa-google">
+                        <a href="https://plus.google.com/107763292354713948501" target="_blank" style="color: black;">
+                            <button style="border: 0px; background-color: gainsboro;" id="google">Google</button>
+                        </a>
+                    </span>
+                </ul>
+                    <hr>
+                </div>
+                <br>
+                <div class="personalinks">
+                    <div class="container">
+                    <div class="info1">
+                        <ul>
+                            <h3>Sky Sports</h3>
+                            <a href="#" style="color: black;">
+                                <button id="p1" style="border: 0px;background-color: gainsboro; padding-bottom: 1%; font-size: 15px;">Get Sky Sports</button></a>
+                            <br>
+                            <a href="#" style="color: black;">
+                                <button id="p2" style="border: 0px;background-color: gainsboro; padding-bottom: 1%; font-size: 15px;">Sky Sports Apps</button></a>
+                            <br>
+                            <a href="#" style="color: black;">
+                                <button id="p3" style="border: 0px;background-color: gainsboro; font-size: 15px;">Team Sky</button></a>
+                            <br>
+                        </ul>
+                    </div>
+                    <div class="info2">
+                        <ul>
+                            <h3>Partners</h3>
+                            <a href="#" style="color: black;">
+                                <button id="p4" style="border: 0px;background-color: gainsboro; padding-bottom: 1%; font-size: 15px;">Sky Bet</button></a>
+                            <br>
+                            <a href="#" style="color: black;">
+                                <button id="p5" style="border: 0px;background-color: gainsboro; padding-bottom: 1%; font-size: 15px;">Super 6</button></a>
+                            <br>
+                            <a href="#" style="color: black;">
+                                <button id="p6" style="border: 0px;background-color: gainsboro; font-size: 15px;">Cricket 365</button></a>
+                            <br>
+                        </ul>
+                    </div>
+                    <div class="info3">
+                        <ul>
+                            <h3>Sky Sports Channels</h3>
+                            <a href="#" style="color: black;">
+                                <button id="p7" style="border: 0px;background-color: gainsboro; padding-bottom: 2%; font-size: 15px;">Get Sky Sports</button></a>
+                            <br>
+                            <a href="#" style="color: black;">
+                                <button id="p8" style="border: 0px;background-color: gainsboro; padding-bottom: 2%; font-size: 15px;">Sky Sports F1</button></a>
+                            <br>
+                            <a href="#" style="color: black;">
+                                <button id="p9" style="border: 0px;background-color: gainsboro; font-size: 15px;">Word for Sky</button></a>
+                            <br>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <br>
+                <hr>
+                <div class="implinks">
+        
+                    <a href="#" style="color: black;">
+                        <button id="lastbtn1" style="border: 0px; background-color: gainsboro; font-size: 16px;">Terms & Conditions</button></a>
+                    <a href="#" style="color: black;">
+                        <button id="lastbtn2" style="border: 0px; background-color: gainsboro; font-size: 16px; padding-left: 2%;">Privacy & Cookies</button></a>
+                    <a href="#" style="color: black;">
+                        <button id="lastbtn3" style="border: 0px; background-color: gainsboro; font-size: 16px; padding-left: 2%;">Contact Us</button></a>
+                    <br>
+                    <p style="font-size: 16px; color: firebrick;">@ 2019 Sky Us</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+</div>
+
+</body>
+
+</html>
